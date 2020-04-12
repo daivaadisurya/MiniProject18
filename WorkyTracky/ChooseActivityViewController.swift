@@ -12,18 +12,13 @@ class ChooseActivityViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        navigationController!.navigationBar.barStyle = .black
-        navigationController!.navigationBar.barTintColor = #colorLiteral(red: 0.1098963395, green: 0.1775904596, blue: 0.3365493119, alpha: 1)
-        navigationController!.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
-        navigationController!.navigationBar.isTranslucent = true
-     
-//        let segmentBarItem = UIBarButtonItem(customView: segmentedControl)
-//        navigationItem.rightBarButtonItem = segmentBarItem
-//        // Do any additional setup after loading the view.
+      
     }
     
+    @IBAction func unwindToStartActivity(unwindSegue: UIStoryboardSegue){}
+    
 
+}
     /*
     // MARK: - Navigation
 
@@ -34,4 +29,3 @@ class ChooseActivityViewController: UIViewController {
     }
     */
 
-}

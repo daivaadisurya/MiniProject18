@@ -31,7 +31,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="button_start"/>
                                         <connections>
-                                            <segue destination="8yS-Br-P2i" kind="modal" id="ld2-2F-n4m"/>
+                                            <segue destination="8yS-Br-P2i" kind="presentation" modalPresentationStyle="pageSheet" id="ld2-2F-n4m"/>
                                         </connections>
                                     </button>
                                 </subviews>
