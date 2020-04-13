@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25ACBFBD2444903300DAD670 /* ReportActivity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25ACBFBC2444903300DAD670 /* ReportActivity.storyboard */; };
+		25ACBFBF2444904D00DAD670 /* ReportActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25ACBFBE2444904D00DAD670 /* ReportActivityViewController.swift */; };
 		71370E2A24441845005531DE /* DetailActivity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71370E2924441845005531DE /* DetailActivity.storyboard */; };
 		71370E2C24441894005531DE /* DetailActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71370E2B24441894005531DE /* DetailActivityViewController.swift */; };
 		715ECB1A24434E99003F1970 /* ChooseActivity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 715ECB1524434E99003F1970 /* ChooseActivity.storyboard */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		25ACBFBC2444903300DAD670 /* ReportActivity.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ReportActivity.storyboard; sourceTree = "<group>"; };
+		25ACBFBE2444904D00DAD670 /* ReportActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportActivityViewController.swift; sourceTree = "<group>"; };
 		71370E2924441845005531DE /* DetailActivity.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailActivity.storyboard; sourceTree = "<group>"; };
 		71370E2B24441894005531DE /* DetailActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailActivityViewController.swift; sourceTree = "<group>"; };
 		715ECB1524434E99003F1970 /* ChooseActivity.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChooseActivity.storyboard; sourceTree = "<group>"; };
@@ -58,6 +62,7 @@
 				715ECB1524434E99003F1970 /* ChooseActivity.storyboard */,
 				F1CD5474243DB81F001B48A6 /* Main.storyboard */,
 				71370E2924441845005531DE /* DetailActivity.storyboard */,
+				25ACBFBC2444903300DAD670 /* ReportActivity.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -69,6 +74,7 @@
 				715ECB1624434E99003F1970 /* ChooseActivityViewController.swift */,
 				F1CD5472243DB81F001B48A6 /* ViewController.swift */,
 				71370E2B24441894005531DE /* DetailActivityViewController.swift */,
+				25ACBFBE2444904D00DAD670 /* ReportActivityViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -162,6 +168,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25ACBFBD2444903300DAD670 /* ReportActivity.storyboard in Resources */,
 				71370E2A24441845005531DE /* DetailActivity.storyboard in Resources */,
 				F1CD547B243DB81F001B48A6 /* LaunchScreen.storyboard in Resources */,
 				F1CD5478243DB81F001B48A6 /* Assets.xcassets in Resources */,
@@ -179,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71C4E47C2443FC210024F917 /* NotificationManager.swift in Sources */,
+				25ACBFBF2444904D00DAD670 /* ReportActivityViewController.swift in Sources */,
 				715ECB1C24434E99003F1970 /* StartViewController.swift in Sources */,
 				F1CD5473243DB81F001B48A6 /* ViewController.swift in Sources */,
 				F1CD546F243DB81F001B48A6 /* AppDelegate.swift in Sources */,
