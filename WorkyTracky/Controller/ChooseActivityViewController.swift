@@ -12,6 +12,7 @@ class ChooseActivityViewController: UIViewController {
     
     var manager = NotificationManager()
     
+    
     @IBOutlet weak var workButton: UIButton!
     @IBOutlet weak var overtimeButton: UIButton!
     @IBOutlet weak var lunchButton: UIButton!
@@ -52,6 +53,9 @@ class ChooseActivityViewController: UIViewController {
         overtimeButton.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.15)
         //label activity di stopwatchpage
         let name = sender.currentTitle!
+        
+        UserDefaults.standard.set(name, forKey: "nameUD")
+        
         textLabel.text = name
         // Set Notification
         setNotificationWork()
@@ -67,6 +71,9 @@ class ChooseActivityViewController: UIViewController {
         workButton.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.15)
         //label activity di stopwatchpage
         let name = sender.currentTitle!
+        
+        UserDefaults.standard.set(name, forKey: "nameUD")
+        
         textLabel.text = name
         // Set Notification
         setNotificationWork()
@@ -82,6 +89,9 @@ class ChooseActivityViewController: UIViewController {
         breakButton.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.15)
         //label activity di stopwatchpage
         let name = sender.currentTitle!
+        
+        UserDefaults.standard.set(name, forKey: "nameUD")
+        
         textLabel.text = name
         // Set Notification
         setNotificationLunch()
@@ -97,6 +107,9 @@ class ChooseActivityViewController: UIViewController {
         lunchButton.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.15)
         //label activity di stopwatchpage
         let name = sender.currentTitle!
+        
+        UserDefaults.standard.set(name, forKey: "nameUD")
+        
         textLabel.text = name
         // Set Notification
         setNotificationBreak()
