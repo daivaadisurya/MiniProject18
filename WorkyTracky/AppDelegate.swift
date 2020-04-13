@@ -7,14 +7,24 @@
 //
 
 import UIKit
+import CoreData
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
+    
+    func userNotificationCenter(
+        /*userNotificationCenter(_:willPresent:withCompletionHandler:) to "ask the delegate how to handle a notification that arrived while the app was running in the foreground"*/
+        
+        _ center: UNUserNotificationCenter,
+        willPresent notification: UNNotification,
+        withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions)
+        -> Void) {
+        completionHandler([.alert, .badge, .sound])
+    }
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        UNUserNotificationCenter.current().delegate = self
         return true
     }
 

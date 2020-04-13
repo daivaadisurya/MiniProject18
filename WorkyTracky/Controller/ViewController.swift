@@ -24,7 +24,10 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var startStopwatchButton: UIButton!
     
+    @IBOutlet weak var activityLabel: UILabel!
     
+    
+    var activityName: String = ""
     
     var hours = 0
     var minutes = 0
@@ -38,27 +41,27 @@ class ViewController: UIViewController {
     private func disableStopTombol(){
         //stopButtonTombol.setTitleColor(.gray, for: .normal)
         stopStopwatchButton.isUserInteractionEnabled = false
-        stopStopwatchButton.backgroundColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
+        stopStopwatchButton.setBackgroundImage(#imageLiteral(resourceName: "disable_button"), for: .normal)
         
     }
     
     private func enableStopTombol(){
         stopStopwatchButton.isUserInteractionEnabled = true
         //stopButtonTombol.setTitleColor(.white, for: .normal)
-        stopStopwatchButton.backgroundColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
+        stopStopwatchButton.setBackgroundImage(#imageLiteral(resourceName: "end_button_2x"), for: .normal)
     }
     
     private func disableStartTombol(){
         startStopwatchButton.isUserInteractionEnabled = false
         //addButtonTombol.setTitleColor(.gray, for: .normal)
-        startStopwatchButton.backgroundColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
+        startStopwatchButton.setBackgroundImage(#imageLiteral(resourceName: "disable_button"), for: .normal)
         
     }
     
     private func enableStartTombol(){
         startStopwatchButton.isUserInteractionEnabled = true
         //addButtonTombol.setTitleColor(UIColor.systemBlue, for: .normal)
-        startStopwatchButton.backgroundColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
+        startStopwatchButton.setBackgroundImage(#imageLiteral(resourceName: "start_button_2x"), for: .normal)
     }
     
     
@@ -122,6 +125,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         disableStopTombol()
+        activityLabel.text = "You're on \(activityName) Now"
     }
 
 
