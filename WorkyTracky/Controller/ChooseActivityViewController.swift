@@ -17,10 +17,29 @@ class ChooseActivityViewController: UIViewController {
     @IBOutlet weak var lunchButton: UIButton!
     @IBOutlet weak var breakButton: UIButton!
     @IBOutlet weak var textLabel: UILabel!
+    @IBOutlet weak var navItem: UINavigationItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         manager.requestPermission()
+  
+        navItem.title = "Choose Activity"
+//        navItem.title = [NSAttributedString.Key.foregroundColor: UIColor.white]
+//        customNavBar()
+    }
+
+//    func customNavBar(){
+//            // color for large title label
+//        self.navItem.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+//
+//            // color for standard title label
+//        self.navItem.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+//
+//        }
+    
+    
+    @IBAction func cancel(sender: UIBarButtonItem){
+        presentingViewController?.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func workPressed(_ sender: UIButton) {
